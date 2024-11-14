@@ -1,0 +1,7 @@
+services:
+    ubuntu:
+        image: alpine
+        build: .
+        container_name: compo-alpine-python
+        volumes: 
+        - .:/app

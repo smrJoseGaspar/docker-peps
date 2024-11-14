@@ -1,0 +1,23 @@
+<html lang="es">
+    <head>
+        <title>Ejercicio 11. Bucle For-in: Tabla de multiplicar</title>
+    </head>
+    <body>
+        <h1>Ejercicio 11. Bucle For-in: Tabla de multiplicar</h1>
+        <script>
+            const numeros=[0,1,2,3,4,5,6,7,8,9,10];
+            for(let x in numeros){
+                document.writeln("Tabla de multiplicar del "+numeros[x]+"<br/>");
+                console.log("Tabla de multiplicar del "+numeros[x]);
+                document.writeln("-----------------------------------------<br/>");
+                console.log("---------------------------------------------------");
+                
+                for(let y in numeros){
+                    document.writeln(numeros[x]+" x "+numeros[y]+" = "+(numeros[x]*numeros[y])+"<br/>");
+                    console.log(numeros[x]+" x "+numeros[y]+" = "+(numeros[x]*numeros[y]));
+                }            
+                document.writeln("<br/>");
+            }
+        </script>
+    </body>
+</html>

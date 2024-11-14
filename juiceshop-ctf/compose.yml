@@ -1,0 +1,28 @@
+networks:
+  hacklab-red:
+    driver: bridge
+
+services:
+  my-juice-shop:
+    env_file:
+      - my-juice-shop.env
+    image: bkimminich/juice-shop
+    container_name: my-juice-shop
+    networks:
+      - hacklab-red
+    
+    ports:
+      - 3000:3000
+  my-ctf:
+    image: ctfd/ctfd:3.4.1 # josegasparsanch2/ctf-juiceshop
+    depends_on:
+      - my-juice-shop
+    container_name: my-ctf
+    volumes: 
+      - ./my-ctf:/var/backups 
+    networks:
+      - hacklab-red
+    
+    ports:
+      - 8000:8000
+

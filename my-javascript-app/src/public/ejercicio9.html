@@ -1,0 +1,23 @@
+<html lang="es">
+    <head>
+        <title>Ejercicio 9. Bucle do-while: Tabla de multiplicar</title>
+    </head>
+    <body>
+        <h1>Ejercicio 9. Bucle do-while: Tabla de multiplicar</h1>
+        <script>
+            let i=0;
+            do{
+                document.writeln("Tabla de multiplicar del "+i+"<br/>");
+                document.writeln("-----------------------------------------<br/>");
+                let j=0;
+                do{
+                    document.writeln(i+" x "+j+" = "+(i*j)+"<br/>");
+                    j++;
+                }while(j<=10)
+                    
+                document.writeln("<br/>");
+                i++;
+            }while(i<=10)
+        </script>
+    </body>
+</html>

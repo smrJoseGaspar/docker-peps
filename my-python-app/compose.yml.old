@@ -1,0 +1,7 @@
+services:
+    ubuntu:
+        image: ubuntu
+        build: .
+        container_name: compo-ubuntu-python
+        volumes: 
+        - .:/app

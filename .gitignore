@@ -1,0 +1,13 @@
+# Ficheros temporales
+*.tmp
+# Excluir directorios
+wordpress/var/
+# Excluir los historiales
+.*_history
+# Excluir target
+target/
+# Excluir carpetas CFT de OWASP Juiceshop
+#my-juiceshop/
+#my-ctf/
+# Excluir carpeta node_modules de proyectos Node
+node_modules/

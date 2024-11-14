@@ -1,0 +1,41 @@
+{
+  "name": "my-javascript-app",
+  "version": "1.0.0",
+  "description": "Aplicación Web Node Dockerizada con pruebas JavaScript en Mocha",
+  "main": "main.js",
+  "directories": {
+    "test": "test",
+    "src": "src",
+    "public": "src/public"
+  },
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/profeJG/docker-peps.git"
+  },
+  "keywords": [
+    "Mocha",
+    "Chai",
+    "Javascript",
+    "Testing",
+    "Progranacion",
+    "Pruebas",
+    "Node",
+    "Nodejs",
+    "Express"
+  ],
+  "author": "Jose Gaspar Sanchez Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/profeJG/docker-peps/issues"
+  },
+  "homepage": "https://github.com/profeJG/docker-peps/blob/main/my-javascript-app/README.md",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.2.0",
+    "express":"^4.18.2"
+
+  }
+}

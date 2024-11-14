@@ -1,0 +1,23 @@
+networks:
+  red_peps:
+    driver: bridge
+  
+services: 
+  juiceshop:
+    image: bkimminich/juice-shop
+    container_name: owasp-juiceshop-PePS
+    ports:
+      - 3000:3000
+    networks:
+      - red_peps
+  # Máquina kali Linux para Pentesting
+  kali:
+    build: .
+    container_name: kali-PePS
+    depends_on:
+      - juiceshop
+      
+    ports:
+      - 3389:3389
+    networks:
+      - red_peps
